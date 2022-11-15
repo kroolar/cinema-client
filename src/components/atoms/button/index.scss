@@ -1,0 +1,11 @@
+.button {
+  @apply
+  bg-gray-800
+  text-white
+  px-3
+  h-10
+  rounded
+  shadow
+  duration-300
+  hover:bg-black;
+}

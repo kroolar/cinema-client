@@ -1,0 +1,18 @@
+.rate {
+  @apply
+  flex;
+
+  &__star {
+    @apply
+    cursor-default;
+  }
+
+  &--editable {
+    .rate__star {
+      @apply
+      duration-300
+      cursor-pointer
+      hover:scale-125;
+    }
+  }
+}
