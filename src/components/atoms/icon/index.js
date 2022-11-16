@@ -1,9 +1,10 @@
 const Icon = ({
   className,
   type = 'question_mark',
-  onClick
+  onClick,
+  size = "md"
 }) => (
-  <i onClick={onClick} className={`material-icons icon ${className}`}>
+  <i onClick={onClick} className={`material-icons material-icons-outlined icon icon--${size} ${className}`}>
     {type}
   </i>
 )

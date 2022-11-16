@@ -3,6 +3,11 @@
   flex
   items-center
   justify-center
-  h-10
   text-3xl;
+
+  &--xs { @apply text-base; }
+  &--sm { @apply text-xl; }
+  &--md { @apply text-3xl; }
+  &--lg { @apply text-5xl; }
+  &--xl { @apply text-7xl; }
 }
