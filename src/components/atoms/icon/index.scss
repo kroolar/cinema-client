@@ -2,12 +2,30 @@
   @apply
   flex
   items-center
-  justify-center
-  text-3xl;
+  justify-center;
 
-  &--xs { @apply text-base; }
-  &--sm { @apply text-xl; }
-  &--md { @apply text-3xl; }
-  &--lg { @apply text-5xl; }
-  &--xl { @apply text-7xl; }
+  &--xs {
+    @apply
+    text-xl;
+  }
+
+  &--sm {
+    @apply
+    text-3xl;
+  }
+
+  &--md {
+    @apply
+    text-5xl;
+  }
+
+  &--lg {
+    @apply
+    text-7xl;
+  }
+
+  &--xl {
+    @apply
+    text-9xl;
+  }
 }
