@@ -1,8 +1,9 @@
 const Card = ({
   children,
-  className
+  className,
+  size = 'md'
 }) => (
-  <div className={`card ${className}`}>
+  <div className={`card card--${size} ${className}`}>
     {children}
   </div>
 )
