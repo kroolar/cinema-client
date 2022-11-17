@@ -1,9 +1,11 @@
 const Button = ({
+  children,
   className,
+  size = 'md',
   text
 }) => (
-  <button className={`button ${className}`}>
-    {text}
+  <button className={`button button--${size} ${className}`}>
+    {text || children}
   </button>
 )
 
