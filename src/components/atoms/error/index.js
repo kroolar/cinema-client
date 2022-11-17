@@ -1,10 +1,15 @@
 const Error = ({
   className,
+  size = 'md',
   text
 }) => {
   if(!text) return null
   
-  return <div className="text-red-600 font-light text-sm leading-none">{text}</div>
+  return (
+    <div className={`error error--${size} ${className}`}>
+      {text}
+    </div>
+  )
 }
 
 export default Error

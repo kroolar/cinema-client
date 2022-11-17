@@ -1,0 +1,31 @@
+.error {
+  @apply
+  font-light
+  leading-none
+  text-red-600;
+
+  &--xs {
+    @apply
+    text-xs;
+  }
+
+  &--sm {
+    @apply
+    text-sm;
+  }
+
+  &--md {
+    @apply
+    text-base;
+  }
+
+  &--lg {
+    @apply
+    text-lg;
+  }
+
+  &--xl {
+    @apply
+    text-xl;
+  }
+}
