@@ -8,15 +8,15 @@ import {
 
 const App = () => {
   return (
-    <div className="flex p-10 bg-gray-100 h-screen">
+    <div className="app">
       <Nav />
 
-      <div className="flex flex-col mr-10 flex-1">
+      <div className="app__main">
         <Header />
         <Movies />
       </div>
 
-      <div className="w-80">
+      <div className="app__aside">
         <Profile />
         <Ranking />
       </div>

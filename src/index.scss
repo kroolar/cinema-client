@@ -1,3 +1,4 @@
+// Initial config
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,32 @@
   font-family: 'Poppins';
 }
 
+// Main Styles
+.app {
+  @apply
+  bg-gray-100
+  flex
+  h-screen
+  p-10;
+
+  &__main {
+    @apply
+    flex
+    flex-1
+    flex-col
+    mr-10;
+  }
+
+  &__aside {
+    @apply
+    w-80;
+  }
+}
+
+// TailwindCSS
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// Components
 @import './components/index.scss'

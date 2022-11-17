@@ -1,4 +1,4 @@
-import { Card, Icon } from "../.."
+import { Card, Icon } from '../..'
 
 const Nav = () => {
   const menu = [
