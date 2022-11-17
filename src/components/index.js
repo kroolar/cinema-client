@@ -8,6 +8,11 @@ import Toast from './atoms/toast'
 import Error from './atoms/error'
 import Select from './atoms/select'
 import Logo from './atoms/logo'
+import Header from './organisms/header'
+import Nav from './organisms/nav'
+import Profile from './organisms/profile'
+import Movies from './pages/movies/index'
+import Ranking from './organisms/ranking'
 
 export {
   Button,
@@ -17,9 +22,18 @@ export {
   Rate,
   Label,
   Error,
-  Select
+  Select,
+  Movies,
+  Profile,
+  Ranking
 }
 
 export { Toast }
 export { Logo }
+
+
+export { Header }
+
+
+export { Nav }
 
