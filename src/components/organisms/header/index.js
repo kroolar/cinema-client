@@ -17,13 +17,13 @@ const Header = () => {
       <div className="w-40 h-40 bg-gray-800 rounded mr-10" />
 
       <div className="flex-1">
-        <div className="leading-none text-4xl font-semibold">
+        <div className="leading-none text-4xl font-semibold mb-2">
           {movie.title}
         </div>
 
-        <Rate className="-ml-1" value={movie.rate} />
+        <Rate size="sm" className="-ml-1" value={movie.rate} />
 
-        <div className="font-light mt-4">
+        <div className="font-light mt-4 text-justify">
           {movie.description}
         </div>
       </div>

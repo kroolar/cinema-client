@@ -18,7 +18,7 @@ const Ranking = () => {
           <div className="mr-4 w-10 h-10 bg-gray-800 rounded"></div>
           <div>
             <div className="leading-none">{title}</div>
-            <Rate className="-mt-1" value={rate} />
+            <Rate size="xs" value={rate} />
           </div>
         </div>
       ))}

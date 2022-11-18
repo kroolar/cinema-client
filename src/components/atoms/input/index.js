@@ -1,12 +1,21 @@
 const Input = ({
   className,
-  value,
-  onChange
+  disabled = false,
+  name,
+  onChange,
+  required = false,
+  size = 'md',
+  type = 'text',
+  value
 }) => (
   <input
-    className={`input ${className}`}
-    value={value}
+    className={`input input--${size} ${className}`}
+    disabled={disabled}
+    name={name}
     onChange={onChange}
+    required={required}
+    type={type}
+    value={value}
   />
 )
 

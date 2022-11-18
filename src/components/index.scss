@@ -1,15 +1,25 @@
+// Atoms
 @import './atoms/button/index.scss';
 @import './atoms/card/index.scss';
 @import './atoms/error/index.scss';
-
-@import './atoms/input/index.scss';
 @import './atoms/icon/index.scss';
+@import './atoms/input/index.scss';
+@import './atoms/label/index.scss';
+@import './atoms/logo/index.scss';
 @import './atoms/rate/index.scss';
-
+@import './atoms/select/index.scss';
+@import './atoms/table/index.scss';
 @import './atoms/toast/index.scss';
 
-@import './atoms/logo/index.scss';
+// Molecules
 
+// Organisms
 @import './organisms/header/index.scss';
-
 @import './organisms/nav/index.scss';
+@import './organisms/profile/index.scss';
+@import './organisms/ranking/index.scss';
+
+// Templates
+
+// Pages
+@import './pages/movies/index/index.scss';

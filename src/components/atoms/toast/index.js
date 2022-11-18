@@ -1,15 +1,39 @@
+import { useState } from "react"
 import Icon from "../icon"
 
-const Toast = () => (
-  <div className="inline-flex w-96 absolute left-0 items-center bg-green-600 shadow text-white py-2 px-3 rounded">
-    <Icon className="mr-4" type="check_circle" />
+const Toast = ({
+  className,
+  text,
+  type = 'info'
+}) => {
+  const [hidden, setHidden] = useState(false)
 
-    <div className="flex-1 mr-4">
-      <div className="leading-none">Description has been created kua</div>
+  const icon = {
+    error: 'error',
+    info: 'info',
+    success: 'check_circle',
+    warning: 'warning'
+  }
+
+  return (
+    <div className={`toast toast--${type} ${hidden && 'toast--hidden'} ${className}`}>
+      <Icon
+        className="toast__icon"
+        size="sm"
+        type={icon[type]}
+        />
+  
+      <div className="toast__content">
+        <div className="toast__text">{text}</div>
+      </div>
+  
+      <Icon
+        onClick={() => setHidden(true)}
+        className="toast__close"
+        type="close"
+      />
     </div>
-
-    <Icon className="text-sm rounded-full cursor-pointer duration-300 h-7 w-7 hover:bg-green-500" type="close" />
-  </div>
-)
+  )
+}
 
 export default Toast

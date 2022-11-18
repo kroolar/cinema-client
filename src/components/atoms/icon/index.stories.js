@@ -1,8 +1,8 @@
 import { Icon } from '../..'
 
 export default {
-  title: 'Atoms/Error',
-  component: Error,
+  title: 'Atoms/Icon',
+  component: Icon,
   argTypes: {
     size: {
       options: ['xs', 'sm', 'md', 'lg', 'xl'],

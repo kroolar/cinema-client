@@ -1,1 +1,86 @@
-.toast{}
+.toast {
+  @apply
+  inline-flex
+  w-120
+  absolute
+  left-0
+  items-center
+  shadow
+  text-white
+  py-2
+  px-3
+  rounded
+  leading-none
+  min-h-12;
+
+  &__icon {
+    @apply
+    mr-2;
+  }
+  &__content {
+    @apply
+    flex-1;
+  }
+
+  &__title {
+    @apply
+    font-semibold;
+  }
+  &__text {
+  }
+
+  &__close {
+    @apply
+    h-6
+    w-6
+    text-2xl
+    rounded-full
+    cursor-pointer
+    duration-300;
+  }
+
+  &--error {
+    @apply
+    bg-red-500;
+
+    .toast__close {
+      @apply
+      hover:bg-red-400;
+    }
+  }
+
+  &--info {
+    @apply
+    bg-blue-500;
+
+    .toast__close {
+      @apply
+      hover:bg-blue-400;
+    }
+  }
+
+  &--success {
+    @apply
+    bg-green-500;
+
+    .toast__close {
+      @apply
+      hover:bg-green-400;
+    }
+  }
+  
+  &--warning {
+    @apply
+    bg-yellow-500;
+
+    .toast__close {
+      @apply
+      hover:bg-yellow-400;
+    }
+  }
+
+  &--hidden {
+    @apply
+    hidden;
+  }
+}

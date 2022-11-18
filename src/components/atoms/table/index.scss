@@ -1,0 +1,29 @@
+.table {
+  @apply
+  rounded
+  w-full
+  p-2;
+
+  &__row {
+    @apply
+    bg-gray-800
+    text-white;
+  }
+
+  &__head {
+    @apply
+    p-2
+    px-3
+    leading-none
+    font-medium
+    text-left;
+  }
+
+  &__cell {
+    @apply
+    p-2
+    px-3
+    text-sm
+    h-10;
+  }
+}

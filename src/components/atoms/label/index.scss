@@ -1,0 +1,30 @@
+.label {
+  @apply
+  font-medium
+  leading-none;
+
+  &--xs {
+    @apply
+    text-xs;
+  }
+
+  &--sm {
+    @apply
+    text-sm;
+  }
+
+  &--md {
+    @apply
+    text-base;
+  }
+
+  &--lg {
+    @apply
+    text-lg;
+  }
+
+  &--xl {
+    @apply
+    text-xl;
+  }
+}

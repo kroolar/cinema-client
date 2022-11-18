@@ -9,6 +9,7 @@ import Logo from './atoms/logo'
 import Rate from './atoms/rate'
 import Select from './atoms/select'
 import Toast from './atoms/toast'
+import Table from './atoms/table'
 
 // Molecules
 
@@ -38,5 +39,6 @@ export {
   Ranking,
   Rate, // To change
   Select,
-  Toast // To change
+  Toast, // To change,
+  Table
 }

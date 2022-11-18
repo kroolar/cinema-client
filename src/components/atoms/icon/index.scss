@@ -4,28 +4,39 @@
   items-center
   justify-center;
 
+  &--2xs {
+    @apply
+    h-4
+    text-2xl;
+  }
+
   &--xs {
     @apply
-    text-xl;
+    h-6
+    text-3xl;
   }
 
   &--sm {
     @apply
-    text-3xl;
+    h-8
+    text-4xl;
   }
 
   &--md {
     @apply
+    h-10
     text-5xl;
   }
 
   &--lg {
     @apply
-    text-7xl;
+    h-12
+    text-6xl;
   }
 
   &--xl {
     @apply
-    text-9xl;
+    h-14
+    text-7xl;
   }
 }

@@ -2,9 +2,13 @@ const Label = ({
   className,
   htmlFor,
   text,
-  required
+  required,
+  size
 }) => (
-  <label className={`font-medium leading-none ${className}`} htmlFor={htmlFor}>
+  <label
+    className={`label label--${size} ${className}`}
+    htmlFor={htmlFor}
+  >
     {text}
     {required && '*'}
   </label>

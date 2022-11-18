@@ -1,1 +1,26 @@
-.logo{}
+.logo {
+  &--xs {
+    @apply
+    h-6;
+  }
+
+  &--sm {
+    @apply
+    h-8;
+  }
+
+  &--md {
+    @apply
+    h-10;
+  }
+
+  &--lg {
+    @apply
+    h-12;
+  }
+
+  &--xl {
+    @apply
+    h-14;
+  }
+}

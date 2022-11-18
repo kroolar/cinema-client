@@ -1,0 +1,60 @@
+.select {
+  @apply
+  relative
+  bg-gray-100
+  border
+  rounded
+  h-10
+  px-3;
+
+  &__input {
+    @apply
+    cursor-pointer
+    flex
+    items-center
+    justify-between
+    h-full;
+  }
+
+  &__text {
+    @apply
+    mr-3;
+  }
+
+  &__arrow {
+    @apply
+    w-4
+    text-gray-800
+    duration-300;
+  }
+
+  &__options {
+    @apply
+    cursor-pointer
+    absolute
+    mt-11
+    bg-gray-100
+    w-full
+    left-0
+    top-0;
+  }
+
+  &__option {
+    @apply
+    cursor-pointer
+    hover:bg-gray-200
+    border
+    rounded
+    flex
+    items-center
+    px-3
+    h-10;
+  }
+
+  &--expanded {
+    .select__arrow {
+      @apply
+      rotate-180;
+    }
+  }
+}

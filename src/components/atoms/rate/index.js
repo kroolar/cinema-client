@@ -1,10 +1,11 @@
 import { Icon } from '../../index'
 
 const Rate = ({
-  scale = 5,
-  value,
   className,
-  onClick
+  onChange,
+  scale = 5,
+  size = 'md',
+  value
 }) => {
   const stars = []
 
@@ -13,11 +14,18 @@ const Rate = ({
 
     if(value > i) starType = 'star' 
 
-    stars.push(<Icon key={i} onClick={() => onClick(i + 1)} className="rate__star" type={starType} />)
+    stars.push(
+      <Icon
+        className="rate__star"
+        key={i}
+        onClick={() => onChange(i + 1)}
+        size={size}
+        type={starType}
+      />)
   }
 
   return (
-    <div className={`rate ${onClick && 'rate--editable'} ${className}`}>
+    <div className={`rate rate--${size} ${onChange && 'rate--editable'} ${className}`}>
       {stars}
     </div>
   )
