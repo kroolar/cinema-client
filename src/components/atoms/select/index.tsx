@@ -1,5 +1,13 @@
-import { useState } from "react"
-import Icon from "../icon"
+import React, { useState } from "react"
+import { Icon } from '../..'
+
+type Props = {
+  className: string,
+  onChange: () => void,
+  value: object,
+  placeholder?: string,
+  options: Array<{ label: string, value: string | number}>
+}
 
 const Select = ({
   className,
@@ -7,7 +15,7 @@ const Select = ({
   value,
   placeholder = 'Select option',
   options = []
-}) => {
+}:Props) => {
   const [expanded, setExpanded] = useState(false)
 
   return (

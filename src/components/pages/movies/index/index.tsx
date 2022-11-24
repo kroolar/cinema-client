@@ -1,4 +1,5 @@
-import { Card, Icon, Rate, Label, Input, Select, Button, Table } from "../../.."
+import React from 'react'
+import { Card, Icon, Label, Input, Select, Button, Table } from "../../.."
 
 const Movies = () => {
   const actions = (

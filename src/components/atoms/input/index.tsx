@@ -1,3 +1,16 @@
+import React from 'react'
+
+type Props = {
+  className?: string,
+  disabled: boolean,
+  name?: string,
+  onChange: () => void,
+  required: boolean,
+  size: 'xs' | 'sm' | 'md' |'lg' | 'xl',
+  type: string,
+  value: string
+}
+
 const Input = ({
   className,
   disabled = false,
@@ -7,7 +20,7 @@ const Input = ({
   size = 'md',
   type = 'text',
   value
-}) => (
+}: Props) => (
   <input
     className={`input input--${size} ${className}`}
     disabled={disabled}

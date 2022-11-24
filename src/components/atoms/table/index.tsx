@@ -1,4 +1,11 @@
-const Table = ({ headers, rows }) => (
+import React from 'react'
+
+type Props = {
+  headers: string[],
+  rows: Array<Array<any>>
+}
+
+const Table = ({ headers, rows }: Props) => (
   <table className="table">
     <thead className="rounded">
       <tr className="table__row">

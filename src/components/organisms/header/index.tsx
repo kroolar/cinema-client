@@ -1,3 +1,4 @@
+import React from 'react'
 import { Card, Rate } from '../..'
 
 const Header = () => {

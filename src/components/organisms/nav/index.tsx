@@ -1,3 +1,4 @@
+import React from 'react'
 import { Card, Icon, Logo } from '../..'
 
 const Nav = () => {

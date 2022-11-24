@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {
   Header,
   Movies,
@@ -21,7 +23,7 @@ const App = () => {
         <Ranking />
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

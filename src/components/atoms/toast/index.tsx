@@ -1,11 +1,17 @@
-import { useState } from "react"
-import Icon from "../icon"
+import React, { useState } from "react"
+import { Icon } from '../../'
+
+type Props = {
+  className?: string,
+  text: string,
+  type: 'error' | 'info' | 'success' | 'warning'
+}
 
 const Toast = ({
   className,
   text,
   type = 'info'
-}) => {
+}: Props) => {
   const [hidden, setHidden] = useState(false)
 
   const icon = {
