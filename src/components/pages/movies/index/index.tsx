@@ -1,7 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, Icon, Label, Input, Select, Button, Table } from "../../.."
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client'
 
 const Movies = () => {
+  const [movies, setMovies] = useState([])
+
+  const getMovies = () => {
+    client
+      .query({
+        query: gql`
+          {
+            movies {
+              title
+              category
+            }
+          }
+        `,
+      })
+      .then((result) => setMovies(result.data.movies))
+  }
+
+  useEffect(() => {
+    getMovies()
+  }, [])
+
+  const client = new ApolloClient({
+    uri: '/graphql',
+    cache: new InMemoryCache(),
+  })
+
   const actions = (
     <div className="flex items-center justify-end">
       <Icon size="2xs" type="edit" />
@@ -9,20 +36,16 @@ const Movies = () => {
     </div>
   )
 
+  const rows = movies.map(({ title, category}) => (
+    [title, category, 123, actions]
+  ))
+
   return (
     <div className="flex items-start">
       <Card className="flex-col h-full mr-10 w-2/3">
         <Table
           headers={['Title', 'Category', 'Length', '']}
-          rows={[
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions],
-            ['Pulp Fiction', 'Thriller', '123', actions]
-          ]}
+          rows={rows}
         />
       </Card>
 
