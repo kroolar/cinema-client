@@ -4,16 +4,18 @@ type Props = {
   children?: any,
   className?: string,
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
-  text?: any
+  text?: any,
+  onClick?: void
 }
 
 const Button = ({
   children,
   className = '',
   size = 'md',
-  text
+  text,
+  onClick
 }: Props) => (
-  <button className={`button button--${size} ${className}`}>
+  <button className={`button button--${size} ${className}`} onClick={onClick}>
     {text || children}
   </button>
 )

@@ -39,7 +39,7 @@ const Select = ({
         <div className="select__options">
           {options.map(({ label, value }) => (
             <div
-              onClick={() => {onChange(value); setExpanded(false) }}
+              onClick={() => {onChange({label, value}); setExpanded(false) }}
               className="select__option"
             >
               {label}
